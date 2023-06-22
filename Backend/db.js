@@ -1,13 +1,13 @@
- const mongoose = require('mongoose');
+const mongoose = require('mongoose');
 
- const mongoURL = "mongodb://localhost:27019/inotebook"
+const mongoURL = "mongodb://localhost:27019/inotebook"
 
- const connectToMongo = () =>{
-     mongoose.connect(mongoURL).then(async () => {
-        console.log("connect to Mongo")
+const connectToMongo = () =>{
+    mongoose.connect(mongoURL).then(async () => {
+       console.log("connect to Mongo")
 
-    }).catch((err) => console.log(err))
- }
+   }).catch((err) => console.log(err))
+}
 
- module.exports = connectToMongo;
+module.exports = connectToMongo;
 
